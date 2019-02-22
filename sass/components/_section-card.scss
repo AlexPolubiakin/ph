@@ -1,0 +1,9 @@
+.section-card {
+    margin-top: 8rem;
+    .news-card {
+        border: none;
+        &__image {
+            max-height: 50vh;
+        }
+    }
+}

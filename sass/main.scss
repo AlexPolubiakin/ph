@@ -1,0 +1,31 @@
+// Import abstract
+@import "sass/abstract/variables";
+@import "sass/abstract/mixins";
+// Import base
+@import "sass/base/animations";
+@import "sass/base/base";
+@import "sass/base/typhography";
+@import "sass/base/utilities";
+// import components
+@import "sass/components/header";
+@import "sass/components/search-bar";
+@import "sass/components/main-slider";
+@import "sass/components/category-rotation";
+@import "sass/components/section-card";
+@import "sass/components/section-news-list";
+@import "sass/components/footer";
+@import "sass/components/footer_alt";
+@import "sass/components/novelty";
+@import "sass/components/product";
+@import "sass/components/breadcrumb";
+@import "sass/components/catalog";
+@import "sass/components/partners";
+@import "sass/components/contacts";
+@import "sass/components/service";
+@import "sass/components/navigation";
+@import "sass/components/single_news.scss";
+
+//import pages
+@import "sass/pages/main";
+@import "sass/pages/catalog";
+@import "sass/pages/product";

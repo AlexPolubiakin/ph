@@ -1,0 +1,46 @@
+.u-text-primary {
+  color: $color-primary;
+}
+
+.u-footer-text {
+  color: black;
+  font-size: 1.7rem;
+}
+
+.u-row-clean {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.u-m-t-10 {
+  margin-top: 10rem !important;
+}
+
+.u-m-t-8 {
+  margin-top: 8rem !important;
+}
+
+.u-m-t-6 {
+  margin-top: 6rem !important;
+}
+
+.u-m-t-4 {
+  margin-top: 4rem !important;
+}
+
+.u-m-t-2 {
+  margin-top: 4rem !important;
+}
+
+.u-link-primary {
+  color: $color-primary;
+  &:hover {
+    color: $color-primary;
+  }
+}
+.u-link-secondary {
+  color: $color-grey-dark;
+  &:hover {
+    color: $color-grey-dark;
+  }
+}

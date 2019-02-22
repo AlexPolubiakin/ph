@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Starter template</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic,cyrillic-ext"
+      rel="stylesheet"
+    />
+
+  </head>
+  <!-- HEADER -->
+  <header class="sticky-top section-header">
+    <!-- <nav class="navbar navbar-light">
+        <a href="/dist/" class="navbar-brand">
+        <img src="img/images/logo/logo-small.png" alt="logo"
+      /></a>
+      <ul class="nav justify-content-end">
+        <div class="searchbar">
+          <input type="text" id="searchbar-input" />
+          <i class="fa fa-search" id="searchbar-icon" aria-hidden="true"></i>
+          <i class="fa fa-times" id="searchbar-cross" aria-hidden="true"></i>
+        </div>
+ 
+          <li class="menu-toggle" onclick="openNav()">
+          <img class="menu-toggle--icon" src="img\images\menu-icon.png" alt="menu icon">
+          <span class="menu-toggle--text">Меню</span>
+          </li>
+      
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="catalog.html" class="nav-link">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="news.html" class="nav-link">Новости</a>
+          </li>
+          <li class="nav-item">
+            <a href="service.html" class="nav-link">Сервис</a>
+          </li>
+          <li class="nav-item">
+            <a href="partners.html" class="nav-link">Партнеры</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link">Контакты</a>
+          </li> 
+      </ul>
+    </nav> -->
+
+
+    <nav class="navbar-top">
+      <div class="menu">
+        <a href="/dist/" class="navbar-brand">
+          <img src="img/images/logo/logo-small.png" alt="logo"/>
+        </a>
+          <div class="menu__wrapper">
+            <div class="searchbar">
+                <input type="text" id="searchbar-input" />
+                <i class="fa fa-search" id="searchbar-icon" aria-hidden="true"></i>
+                <i class="fa fa-times" id="searchbar-cross" aria-hidden="true"></i>
+            </div>
+            <div class="menu-toggle" onclick="openNav()">
+                <img class="menu-toggle--icon" src="img\images\menu-icon.png" alt="menu icon">
+                <span class="menu-toggle--text">Меню</span>
+            </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div id="sideNavMenu" class="navigation">
+      <nav class="navigation_nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <div class="navigation__close">
+                <a href="javascript:void(0)" class="navigation__close--link" onclick="closeNav()">Закрыть <span class="navigation__close--icon">&times;</span></a>
+              </div>
+              <a href="index.html" class="navigation__link">Главная</a>
+              <a href="catalog.html" class="navigation__link">Каталог</a>
+              <a href="news.html" class="navigation__link">Новости</a>
+              <a href="service.html" class="navigation__link">Сервис</a>
+              <a href="partners.html" class="navigation__link">Партнеры</a>
+              <a href="contacts.html" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+  
+ 
+  <!-- MAIN BANNER SECTION -->
+  <section class="rotation-banner">
+    <div class="main-rotation">
+      <div>
+        <img
+          class="slide"
+          src="img/images/main-rotation/1.jpg"
+          alt="main-rotation-slide"
+        />
+      </div>
+      <div>
+        <img
+          class="slide"
+          src="img/images/main-rotation/2.jpg"
+          alt="main-rotation-slide"
+        />
+      </div>
+      <div>
+        <img
+          class="slide"
+          src="img/images/main-rotation/3.jpg"
+          alt="main-rotation-slide"
+        />
+      </div>
+    </div>
+  </section>
+  <!-- CATEGORY ROTATION SECTION -->
+  <section class="category-rotation mt-2">
+    <h2 class="text-center u-text-primary font-weight-bold display-4">
+      Категории
+    </h2>
+    <div class="cat-rotation mt-3">
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-1.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Шашлычниицы</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-2.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Кофемолки</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-3.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Мясорубки</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-4.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Блендеры</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-5.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Чайники</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-6.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Термопоты</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-7.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Холодильники</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-1.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Кофеварки</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-2.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Соковыжималки</div>
+        </a>
+      </div>
+      <div class="cat-rotation__item">
+        <a class="cat-rotation__link" href="#">
+          <img
+            class="cat-rotation__image img-fluid p-1"
+            src="img/images/category/cat-image-3.png"
+            alt="Category image"
+          />
+          <div class="cat-rotation__text text-center">Кухонные весы</div>
+        </a>
+      </div>
+    </div>
+    <div class="mt-1">
+      <a class="check-all-cat float-right" href="#"
+        ><span class="lead">Смотреть все</span></a
+      >
+    </div>
+  </section>
+  <!-- NEWS TYPE #2 SECTION -->
+  <section class="section-news-3 u-m-t-6">
+    <div class="container">
+      <h3 class="text-center u-text-primary font-weight-bold display-4">
+        Наши новости
+      </h3>
+      <div class="row">
+        <div class="col-md-4 news-list__item my-2">
+          <figure class="news-list__figure">
+            <img
+              class="img-fluid news-list__image"
+              src="img/images/cat_img/cat-1.jpg"
+              alt="News list image"
+            />
+            <figcaption class="news-list__caption">
+              <a href="#" class="news-list__button">Подробнее</a>
+            </figcaption>
+          </figure>
+          <div class="news-list__text">
+            <p>Анонс этой лампы, читать подробнее</p>
+            <span class="lead float-left"
+              ><a href="#" class="news-list__button">Подробнее</a></span
+            >
+            <span class="blockquote-footer float-right">1.12.18</span>
+          </div>
+        </div>
+        <div class="col-md-4 news-list__item my-2">
+          <figure class="news-list__figure">
+            <img
+              class="img-fluid news-list__image"
+              src="img/images/cat_img/cat-2.jpg"
+              alt="News list image"
+            />
+            <figcaption class="news-list__caption">
+              <a href="#" class="news-list__button">Подробнее</a>
+            </figcaption>
+          </figure>
+          <div class="news-list__text">
+            <p>Анонс этой лампы, читать подробнее</p>
+            <span class="lead float-left"
+              ><a href="#" class="news-list__button">Подробнее</a></span
+            >
+            <span class="blockquote-footer float-right">1.12.18</span>
+          </div>
+        </div>
+        <div class="col-md-4 news-list__item my-2">
+          <figure class="news-list__figure">
+            <img
+              class="img-fluid news-list__image"
+              src="img/images/cat_img/cat-3.jpg"
+              alt="News list image"
+            />
+            <figcaption class="news-list__caption">
+              <a href="#" class="news-list__button">Подробнее</a>
+            </figcaption>
+          </figure>
+          <div class="news-list__text">
+            <p>Анонс этой лампы, читать подробнее</p>
+            <span class="lead float-left"
+              ><a href="#" class="news-list__button">Подробнее</a></span
+            >
+            <span class="blockquote-footer float-right">1.12.18</span>
+          </div>
+        </div>
+        <div class="col-md-4 news-list__item my-2">
+          <figure class="news-list__figure">
+            <img
+              class="img-fluid news-list__image"
+              src="img/images/cat_img/cat-4.jpg"
+              alt="News list image"
+            />
+            <figcaption class="news-list__caption">
+              <a href="#" class="news-list__button">Подробнее</a>
+            </figcaption>
+          </figure>
+          <div class="news-list__text">
+            <p>Анонс этой лампы, читать подробнее</p>
+            <span class="lead float-left"
+              ><a href="#" class="news-list__button">Подробнее</a></span
+            >
+            <span class="blockquote-footer float-right">1.12.18</span>
+          </div>
+        </div>
+        <div class="col-md-4 news-list__item my-2">
+          <figure class="news-list__figure">
+            <img
+              class="img-fluid news-list__image"
+              src="img/images/cat_img/cat-5.jpg"
+              alt="News list image"
+            />
+            <figcaption class="news-list__caption">
+              <a href="#" class="news-list__button">Подробнее</a>
+            </figcaption>
+          </figure>
+          <div class="news-list__text">
+            <p>Анонс этой лампы, читать подробнее</p>
+            <span class="lead float-left"
+              ><a href="#" class="news-list__button">Подробнее</a></span
+            >
+            <span class="blockquote-footer float-right">1.12.18</span>
+          </div>
+        </div>
+        <div class="col-md-4 news-list__item my-2">
+          <figure class="news-list__figure">
+            <img
+              class="img-fluid news-list__image"
+              src="img/images/cat_img/cat-6.jpg"
+              alt="News list image"
+            />
+            <figcaption class="news-list__caption">
+              <a href="#" class="news-list__button">Подробнее</a>
+            </figcaption>
+          </figure>
+          <div class="news-list__text">
+            <p>Анонс этой лампы, читать подробнее</p>
+            <span class="lead float-left"
+              ><a href="#" class="news-list__button">Подробнее</a></span
+            >
+            <span class="blockquote-footer float-right">1.12.18</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-block news-list__button mt-3"
+        >Читать все новости</a
+      >
+    </div>
+
+</section>
+<!-- SALE OFFER SECTION #2 -->
+  <!-- <section class="section-card">
+      <h3 class="text-center u-text-primary font-weight-bold display-4">
+        Акции
+      </h3>
+
+      <div class="row mx-5">
+        <div class="col-md-4">
+          <div class="news-card card">
+            <img
+              class="news-card__image"
+              src="img/images/rotation-2items/Suprashop_banner_0043.jpg"
+              alt="News image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Немного рекламного текста о прекрасном продукте.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news-card card">
+            <img
+              class="news-card__image"
+              src="img/images/rotation-2items/sushilki_2.jpg"
+              alt="News image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Немного рекламного текста о прекрасном продукте.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="news-card card">
+            <img
+              class="news-card__image"
+              src="img/images/rotation-2items/sushilki_2.jpg"
+              alt="News image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Немного рекламного текста о прекрасном продукте.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section> -->
+
+  <!-- NOVELTY PRODUCTS -->
+  <section class="section-news--2 mt-5">
+    <h3 class="text-center u-text-primary font-weight-bold display-4">
+      Новинки
+    </h3>
+      <div class="row justify-content-center u-row-clean">
+          <div class="col-md-2 col-sm-4 card-wrapper">
+              <div class="card card-new-item">
+                <img
+                  class="card-img-top img-fluid card-new-item__image align-top"
+                  src="img/images/category/cat-image-1.png"
+                  alt="Novelty image"
+                />
+                <div class="card-body text-center">
+                  <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                </div>
+              </div>
+            </div>
+        <div class="col-md-2 col-sm-4 card-wrapper">
+            <div class="card card-new-item">
+              <img
+                class="card-img-top img-fluid"
+                src="img/images/category/cat-image-2.png"
+                alt="Novelty image"
+              />
+              <div class="card-body text-center">
+                  <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 card-wrapper">
+              <div class="card card-new-item">
+                <img
+                  class="card-img-top img-fluid"
+                  src="img/images/category/cat-image-3.png"
+                  alt="Novelty image"
+                />
+                <div class="card-body text-center">
+                    <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 card-wrapper">
+                <div class="card card-new-item">
+                  <img
+                    class="card-img-top img-fluid"
+                    src="img/images/category/cat-image-4.png"
+                    alt="Novelty image"
+                  />
+                  <div class="card-body text-center">
+                    <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 card-wrapper">
+                  <div class="card card-new-item">
+                    <img
+                      class="card-img-top img-fluid"
+                      src="img/images/category/cat-image-5.png"
+                      alt="Novelty image"
+                    />
+                    <div class="card-body text-center">
+                      <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 card-wrapper">
+                    <div class="card card-new-item">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/images/category/cat-image-6.png"
+                        alt="Novelty image"
+                      />
+                      <div class="card-body text-center">
+                          <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                        </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- SALE OFFER SECTION #1  -->
+  <!-- <section class="section-card">
+    <div class="container">
+      <h3 class="text-center u-text-primary font-weight-bold display-4">
+        Наши акции
+      </h3>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="news-card card">
+            <img
+              class="news-card__image"
+              src="img/images/rotation-2items/Suprashop_banner_0043.jpg"
+              alt="News image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="news-card card">
+            <img
+              class="news-card__image"
+              src="img/images/rotation-2items/sushilki_2.jpg"
+              alt="News image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <nav class="navbar footer-container navbar-alt-2">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="img/images/logo/logo-small-white.png" alt="footer-logo" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container mb-5">
+      <div class="row my-3">
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">Информация и поддержка</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item "><a href="#">Свяжитесь с нами</a></li>
+            <li class="list-group-item"><a href="#">Гарантия</a></li>
+            <li class="list-group-item"><a href="#">FAQ</a></li>
+            <li class="list-group-item"><a href="#">О компании</a></li>
+            <li class="list-group-item"><a href="#">Новости</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">Каталог</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Техника для дома</a></li>
+            <li class="list-group-item"><a href="#">Техника для кухни</a></li>
+            <li class="list-group-item"><a href="#">Красота и здоровье</a></li>
+            <li class="list-group-item">
+              <a href="#">Климатическая техника</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">Контакты</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Email: test@test.test</li>
+            <li class="list-group-item">Телефон: +7(800)777-77-77</li>
+            <li class="list-group-item">Полезная Информация 1</li>
+            <li class="list-group-item">Полезная Информация 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

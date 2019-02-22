@@ -1,0 +1,28 @@
+.card-new-item {
+    padding: 1rem 0;
+    vertical-align: center;
+}
+
+.card-wrapper {
+    padding: 0;
+    .card-img-top {
+        margin: 0 auto;
+        width: 75%;
+        height: auto;
+        transition: all 0.5s;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.card-new-item__link {
+    vertical-align: text-bottom;
+    font-size: 1.5rem;
+    &:hover {
+        text-decoration: none;
+        color: $color-primary-light;
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,23 @@
+.list-group-item {
+    font-weight: 500;
+    a {
+        color: $color-primary;
+        text-decoration: none;
+        &:hover {
+            color: $color-primary-light;
+            font-weight: bold;
+        }
+    }
+}
+
+.navbar-alt {
+    background-color: $color-primary;
+}
+
+.navbar-alt-1 {
+    background-color: $color-primary-light;
+}
+
+.navbar-alt-2 {
+    background-color: $color-primary-dark;
+}

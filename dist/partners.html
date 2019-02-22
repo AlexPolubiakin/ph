@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Starter template</title>
+  <!-- <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic,cyrillic-ext"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- HEADER -->
+  <header class="sticky-top section-header">
+    <nav class="navbar-top">
+      <div class="menu">
+        <a href="/dist/" class="navbar-brand">
+          <img src="img/images/logo/logo-small.png" alt="logo" />
+        </a>
+        <div class="menu__wrapper">
+          <div class="searchbar">
+            <input type="text" id="searchbar-input" />
+            <i class="fa fa-search" id="searchbar-icon" aria-hidden="true"></i>
+            <i class="fa fa-times" id="searchbar-cross" aria-hidden="true"></i>
+          </div>
+          <div class="menu-toggle" onclick="openNav()">
+            <img
+              class="menu-toggle--icon"
+              src="img\images\menu-icon.png"
+              alt="menu icon"
+            />
+            <span class="menu-toggle--text">Меню</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="sideNavMenu" class="navigation">
+    <nav class="navigation_nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <div class="navigation__close">
+            <a
+              href="javascript:void(0)"
+              class="navigation__close--link"
+              onclick="closeNav()"
+              >Закрыть <span class="navigation__close--icon">&times;</span></a
+            >
+          </div>
+          <a href="index.html" class="navigation__link">Главная</a>
+          <a href="catalog.html" class="navigation__link">Каталог</a>
+          <a href="news.html" class="navigation__link">Новости</a>
+          <a href="service.html" class="navigation__link">Сервис</a>
+          <a href="partners.html" class="navigation__link">Партнеры</a>
+          <a href="contacts.html" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- SINGLE NEWS SECTION -->
+  <section class="partners p-5 mx-5">
+    <h2 class="u-m-t-2">Наши партнеры:</h2>
+    <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="partners-item my-5">
+                <div class="partners-item__logo">
+                  <img src="img/images/az.jpg" width="100px" alt="partner logo">
+                </div>
+                <div class="partners-item__info">
+                    <div class="partners-item__info--name">AZshop</div>
+                    <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+                    <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+                </div>
+              </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="partners-item my-5">
+                <div class="partners-item__logo">
+                  <img src="img/images/az.jpg" width="100px" alt="partner logo">
+                </div>
+                <div class="partners-item__info">
+                    <div class="partners-item__info--name">AZshop</div>
+                    <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+                    <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+                </div>
+              </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="partners-item my-5">
+                <div class="partners-item__logo">
+                  <img src="img/images/az.jpg" width="100px" alt="partner logo">
+                </div>
+                <div class="partners-item__info">
+                    <div class="partners-item__info--name">AZshop</div>
+                    <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+                    <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+                </div>
+              </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="partners-item my-5">
+                <div class="partners-item__logo">
+                  <img src="img/images/az.jpg" width="100px" alt="partner logo">
+                </div>
+                <div class="partners-item__info">
+                    <div class="partners-item__info--name">AZshop</div>
+                    <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+                    <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+                </div>
+              </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+          <div class="partners-item my-5">
+              <div class="partners-item__logo">
+                <img src="img/images/az.jpg" width="100px" alt="partner logo">
+              </div>
+              <div class="partners-item__info">
+                  <div class="partners-item__info--name">AZshop</div>
+                  <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+                  <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+              </div>
+            </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <div class="partners-item my-5">
+            <div class="partners-item__logo">
+              <img src="img/images/az.jpg" width="100px" alt="partner logo">
+            </div>
+            <div class="partners-item__info">
+                <div class="partners-item__info--name">AZshop</div>
+                <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+                <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+            </div>
+          </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <div class="partners-item my-5">
+          <div class="partners-item__logo">
+            <img src="img/images/az.jpg" width="100px" alt="partner logo">
+          </div>
+          <div class="partners-item__info">
+              <div class="partners-item__info--name">AZshop</div>
+              <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+              <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+          </div>
+        </div>
+  </div>
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+    <div class="partners-item my-5">
+        <div class="partners-item__logo">
+          <img src="img/images/az.jpg" width="100px" alt="partner logo">
+        </div>
+        <div class="partners-item__info">
+            <div class="partners-item__info--name">AZshop</div>
+            <div class="partners-item__info--phone"><a class="u-link-secondary" href="tel:+78007750467">+7(800)775-04-67</a></div>
+            <div class="partners-item__info--link"><a class="u-link-secondary" href="https://azshop.ru">https://azshop.ru</a></div>
+        </div>
+      </div>
+</div>
+      
+
+
+        <!-- <div class="col-md-3 col-sm-4">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://via.placeholder.com/100x100"
+                    class="card-img"
+                    alt="image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h4 class="card-title">AZShop</h4>
+                    <p class="card-text">
+                      <small>Телефон: +7 (800) 775-04-67</small>
+                    </p>
+                    <a href="https://azshop.ru/">https://azshop.ru/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <nav class="navbar footer-container navbar-alt-2">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="img/images/logo/logo-small-white.png" alt="footer-logo" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container mb-5">
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">Информация и поддержка</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item "><a href="#">Свяжитесь с нами</a></li>
+            <li class="list-group-item"><a href="#">Гарантия</a></li>
+            <li class="list-group-item"><a href="#">FAQ</a></li>
+            <li class="list-group-item"><a href="#">О компании</a></li>
+            <li class="list-group-item"><a href="#">Новости</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">Каталог</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Техника для дома</a></li>
+            <li class="list-group-item"><a href="#">Техника для кухни</a></li>
+            <li class="list-group-item"><a href="#">Красота и здоровье</a></li>
+            <li class="list-group-item">
+              <a href="#">Климатическая техника</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">Контакты</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Email: test@test.test</li>
+            <li class="list-group-item">Телефон: +7(800)777-77-77</li>
+            <li class="list-group-item">Полезная Информация 1</li>
+            <li class="list-group-item">Полезная Информация 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(".main-rotation").slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
+      });
+      $(".cat-rotation").slick({
+        infinite: true,
+        centerMode: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        pauseOnFocus: true,
+        arrows: false
+      });
+    </script>
+  </body>
+</html>

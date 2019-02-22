@@ -1,0 +1,11 @@
+.list-group-item {
+    font-weight: 500;
+    a {
+        color: $color-primary;
+        text-decoration: none;
+        &:hover {
+            color: $color-primary-light;
+            font-weight: bold;
+        }
+    }
+}

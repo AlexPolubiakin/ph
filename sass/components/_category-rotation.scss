@@ -1,0 +1,50 @@
+.cat-rotation {
+    margin: 0 3rem;
+    &__link {
+        color: $color-primary;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__item {
+        width: auto;
+        border-radius: 1.5rem;
+    }
+    &__image {
+        max-height: 20vh;
+        margin: 0 auto;
+        transition: all 0.5s;
+        &:hover {
+            opacity: 0.5;
+            transform: translateY(-0.5rem) scale(0.95);
+        }
+    }
+    &__text {
+        color: $color-primary;
+        transition: all 0.2s;
+        &:hover {
+            transform: scale(1.03);
+            color: $color-primary-light;
+            font-weight: bold;
+        }
+    }
+}
+
+.check-all-cat {
+    color: $color-primary;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 10rem;
+    &:hover {
+        text-decoration: none;
+        transform: scale(1.05);
+        color: $color-primary;
+    }
+    &:focus {
+        outline: none;
+    }
+}

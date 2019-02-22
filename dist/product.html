@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Starter template</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic,cyrillic-ext"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- HEADER -->
+  <header class="sticky-top section-header">
+    <nav class="navbar-top">
+      <div class="menu">
+        <a href="/dist/" class="navbar-brand">
+          <img src="img/images/logo/logo-small.png" alt="logo" />
+        </a>
+        <div class="menu__wrapper">
+          <div class="searchbar">
+            <input type="text" id="searchbar-input" />
+            <i class="fa fa-search" id="searchbar-icon" aria-hidden="true"></i>
+            <i class="fa fa-times" id="searchbar-cross" aria-hidden="true"></i>
+          </div>
+          <div class="menu-toggle" onclick="openNav()">
+            <img
+              class="menu-toggle--icon"
+              src="img\images\menu-icon.png"
+              alt="menu icon"
+            />
+            <span class="menu-toggle--text">Меню</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="sideNavMenu" class="navigation">
+    <nav class="navigation_nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <div class="navigation__close">
+            <a
+              href="javascript:void(0)"
+              class="navigation__close--link"
+              onclick="closeNav()"
+              >Закрыть <span class="navigation__close--icon">&times;</span></a
+            >
+          </div>
+          <a href="index.html" class="navigation__link">Главная</a>
+          <a href="catalog.html" class="navigation__link">Каталог</a>
+          <a href="news.html" class="navigation__link">Новости</a>
+          <a href="service.html" class="navigation__link">Сервис</a>
+          <a href="partners.html" class="navigation__link">Партнеры</a>
+          <a href="contacts.html" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Breadcrumbs Elem -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Главная</a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-link"  href="catalog.html">Каталог</a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-link"  href="#">Микроволновые печи</a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-link__active"  href="product.html">Микроволновая печь Pioneer BFG-9000</a></li>
+    </ol>
+  </nav>
+  <!-- product section -->
+  <section class="product-section">
+    <div class="container">
+      <!-- изображение и краткие характеристики -->
+      <div class="row my-5">
+        <div class="col-md-7">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel"
+            data-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="img/images/similar/1.png" data-lightbox="image-set">
+                  <img
+                  class="d-block w-100"
+                  src="img/images/similar/1.png"
+                  alt="First slide"
+                />
+                </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="img/images/similar/2.png" data-lightbox="image-set">
+                <img
+                  class="d-block w-100"
+                  src="img/images/similar/2.png"
+                  alt="Second slide"
+                  data-lightbox="image-2"
+                />
+              </a>
+              </div>
+              <div class="carousel-item">
+                <a href="img/images/similar/3.png" data-lightbox="image-set">
+                  <img
+                    class="d-block w-100"
+                    src="img/images/similar/3.png"
+                    alt="Third slide"
+                    data-lightbox="image-3"
+                  />
+              </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="container mt-2">
+                <div class="row">
+                  <div class="col-md-2 col-sm-4 col-xs-4">
+                    <img
+                      src="img/images/similar/1.png"
+                      alt="1"
+                      class="img-thumbnail active"
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="0"
+                    />
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-xs-4">
+                    <div class="img-wrapper">
+                      <img
+                        src="img/images/similar/2.png"
+                        alt="1"
+                        class="img-thumbnail"
+                        data-target="#carouselExampleIndicators" 
+                        data-slide-to="1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-xs-4">
+                    <img
+                      src="img/images/similar/3.png"
+                      alt="1"
+                      class="img-thumbnail"
+                      data-target="#carouselExampleIndicators" 
+                      data-slide-to="2"
+                    />
+                  </div>
+                </div>
+              </div> -->
+              <div class="container">
+                  <div class="thumbflex_countainer">
+                    <div class="thumbflex_countainer__item">
+                        <img
+                        src="img/images/similar/1.png"
+                        alt="1"
+                        class="img-thumbnail thumbflex_countainer__item--image active"
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="0"
+                        
+                      />
+                    </div>
+                    <div class="thumbflex_countainer__item">
+                        <img
+                        src="img/images/similar/2.png"
+                        alt="1"
+                        class="img-thumbnail thumbflex_countainer__item--image"
+                        data-target="#carouselExampleIndicators" 
+                        data-slide-to="1"
+                      />
+                    </div>
+                    <div class="thumbflex_countainer__item">
+                      <img
+                        src="img/images/similar/3.png"
+                        alt="1"
+                        class="img-thumbnail thumbflex_countainer__item--image"
+                        data-target="#carouselExampleIndicators" 
+                        data-slide-to="2"
+                      />
+                    </div>
+                  </div>
+              </div>
+            </div>
+        <div class="col-md-5">
+          <div class="card card-product">
+            <div class="card-body">
+              <h5 class="card-title display-4 u-text-primary">
+                Микроволновая печь BFG-9000
+              </h5>
+              <p class="card-text">
+                Лучше чем этот блендер вы не найдете. Информация 100%
+              </p>
+            </div>
+            <ul class="list-group list-group-flush card-product__list">
+              <li class="list-group-item">
+                Мощность: <span class="float-right">800 Вт</span>
+              </li>
+              <li class="list-group-item">
+                Тип управления: <span class="float-right">Механическое</span>
+              </li>
+              <li class="list-group-item">
+                Артикул: <span class="float-right">23SB14</span>
+              </li>
+              <li class="list-group-item">
+                Внутреннее покрытие камеры:<span class="float-right"
+                  >эмаль</span
+                >
+              </li>
+              <li class="list-group-item">
+                Вес с упаковкой, гр:<span class="float-right">13700</span>
+              </li>
+              <li class="list-group-item">
+                Размер упаковки (ВхШхГ):<span class="float-right"
+                  >330х435х535 мм</span
+                >
+              </li>
+              <li class="list-group-item">
+                Гарантия от производителя:<span class="float-right">Да</span>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+      
+      <!-- Текстовый блок -->
+
+
+      <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link prod-chars active"
+            id="description-tab"
+            data-toggle="tab"
+            href="#description"
+            role="tab"
+            aria-controls="description"
+            aria-selected="true"
+            >Описание</a
+          >
+        </li>
+        <li class="nav-item">
+            <a
+              class="nav-link prod-chars"
+              id="characteristics-tab"
+              data-toggle="tab"
+              href="#characteristics"
+              role="tab"
+              aria-controls="characteristics"
+              aria-selected="false"
+              >Характеристики</a
+            >
+          </li>
+        <li class="nav-item">
+          <a
+            class="nav-link prod-chars"
+            id="download-tab"
+            data-toggle="tab"
+            href="#download"
+            role="tab"
+            aria-controls="download"
+            aria-selected="false"
+            >Файлы для скачивания</a
+          >
+        </li>
+
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        
+        <div
+          class="tab-pane fade show active"
+          id="description"
+          role="tabpanel"
+          aria-labelledby="description-tab"
+        >
+          <p class="mt-5">
+            <div class="container">
+                Микроволновая печь самого востребованного объема 20 литров отлично
+                подойдет как для приготовления, так и для разогрева, а также
+                размораживания пищи. Несомненное достоинство этой микроволновой печи
+                - удобное и понятное механическое управление (выбор мощности и
+                времени работы). Благодаря внутреннему эмалевому покрытию, камеру
+                СВЧ-печи легко мыть, она неприхотлива и проста в обращении.
+            </div>
+          </p>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="characteristics"
+          role="tabpanel"
+          aria-labelledby="characteristics-tab"
+        >
+          <div class="container">
+            <div class="row my-1">
+              <div class="col-md-8 mx-auto">
+                <h3 class="mt-5 mb-3">Описание товара:</h3>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Мощность:</div>
+                      <div class="p-2">100500 МВт</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Количество скоростей:</div>
+                      <div class="p-2">12</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Вес с упаковкой, гр:</div>
+                      <div class="p-2">1133</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Размер упаковки (ВхШхГ):</div>
+                      <div class="p-2">222х150х189</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Артикул</div>
+                      <div class="p-2">BFG-9000</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Артикул</div>
+                      <div class="p-2">BFG-9000</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Артикул</div>
+                      <div class="p-2">BFG-9000</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Артикул</div>
+                      <div class="p-2">BFG-9000</div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <div class="p-2">Артикул</div>
+                      <div class="p-2">BFG-9000</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div
+          class="tab-pane fade"
+          id="download"
+          role="tabpanel"
+          aria-labelledby="download-tab"
+        >
+          <div class="container mt-3">
+            <div class="card" id="download">
+              <div class="card-header">Инструкция</div>
+              <div class="card-body text-danger">
+                <a href="#" class="card-product-dl-link u-text-primary">Скачать инструкцию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Раздел краткое описание/ инструкция /полное описание -->
+    </div>
+  </section>
+ <!-- SIMILAR PRODUCTS -->
+ <section class="section-news--2 mt-5 mx-5">
+  <h4 class="text-center u-text-primary font-weight-bold display-4">
+    Вам также может понравиться
+  </h4>
+    <div class="row justify-content-center u-row-clean">
+        <div class="col-md-2 col-sm-4 card-wrapper">
+            <div class="card card-new-item">
+              <img
+                class="card-img-top img-fluid card-new-item__image align-top"
+                src="img/images/similar/1.png"
+                alt="Novelty image"
+              />
+              <div class="card-body text-center">
+                <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+              </div>
+            </div>
+          </div>
+      <div class="col-md-2 col-sm-4 card-wrapper">
+          <div class="card card-new-item">
+            <img
+              class="card-img-top img-fluid"
+              src="img/images/similar/2.png"
+              alt="Novelty image"
+            />
+            <div class="card-body text-center">
+                <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 card-wrapper">
+            <div class="card card-new-item">
+              <img
+                class="card-img-top img-fluid"
+                src="img/images/similar/3.png"
+                alt="Novelty image"
+              />
+              <div class="card-body text-center">
+                  <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 card-wrapper">
+              <div class="card card-new-item">
+                <img
+                  class="card-img-top img-fluid"
+                  src="img/images/category/cat-image-1.png"
+                  alt="Novelty image"
+                />
+                <div class="card-body text-center">
+                  <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 card-wrapper">
+                <div class="card card-new-item">
+                  <img
+                    class="card-img-top img-fluid"
+                    src="img/images/category/cat-image-2.png"
+                    alt="Novelty image"
+                  />
+                  <div class="card-body text-center">
+                    <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 card-wrapper">
+                  <div class="card card-new-item">
+                    <img
+                      class="card-img-top img-fluid"
+                      src="img/images/category/cat-image-3.png"
+                      alt="Novelty image"
+                    />
+                    <div class="card-body text-center">
+                        <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                      </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+</section>
+<!-- CROSSSELL PRODUCTS
+<section class="section-news--2 mt-5 mx-5">
+  <h4 class="text-center u-text-primary font-weight-bold display-4">
+    C этим покупают
+  </h4>
+    <div class="row justify-content-center u-row-clean">
+        <div class="col-md-2 col-sm-4 card-wrapper">
+            <div class="card card-new-item">
+              <img
+                class="card-img-top img-fluid card-new-item__image align-top"
+                src="img/images/category/cat-image-1.png"
+                alt="Novelty image"
+              />
+              <div class="card-body text-center">
+                <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+              </div>
+            </div>
+          </div>
+      <div class="col-md-2 col-sm-4 card-wrapper">
+          <div class="card card-new-item">
+            <img
+              class="card-img-top img-fluid"
+              src="img/images/category/cat-image-2.png"
+              alt="Novelty image"
+            />
+            <div class="card-body text-center">
+                <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 card-wrapper">
+            <div class="card card-new-item">
+              <img
+                class="card-img-top img-fluid"
+                src="img/images/category/cat-image-3.png"
+                alt="Novelty image"
+              />
+              <div class="card-body text-center">
+                  <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 card-wrapper">
+              <div class="card card-new-item">
+                <img
+                  class="card-img-top img-fluid"
+                  src="img/images/category/cat-image-4.png"
+                  alt="Novelty image"
+                />
+                <div class="card-body text-center">
+                  <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4 card-wrapper">
+                <div class="card card-new-item">
+                  <img
+                    class="card-img-top img-fluid"
+                    src="img/images/category/cat-image-5.png"
+                    alt="Novelty image"
+                  />
+                  <div class="card-body text-center">
+                    <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 card-wrapper">
+                  <div class="card card-new-item">
+                    <img
+                      class="card-img-top img-fluid"
+                      src="img/images/category/cat-image-6.png"
+                      alt="Novelty image"
+                    />
+                    <div class="card-body text-center">
+                        <a class="card-new-item__link u-text-primary" href="#">Название товара№1</a>
+                      </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+</section> -->
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <nav class="navbar footer-container navbar-alt-2">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="img/images/logo/logo-small-white.png" alt="footer-logo" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row my-3">
+        <div class="col-md-4">
+          <h5 class="font-weight-bold u-footer-text">Информация и поддержка</h5>
+          <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item "><a href="#">Свяжитесь с нами</a></li>
+            <li class="list-group-item"><a href="#">Гарантия</a></li>
+            <li class="list-group-item"><a href="#">FAQ</a></li>
+            <li class="list-group-item"><a href="#">О компании</a></li>
+            <li class="list-group-item"><a href="#">Новости</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="font-weight-bold u-footer-text">Каталог</h5>
+          <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item"><a href="#">Техника для дома</a></li>
+            <li class="list-group-item"><a href="#">Техника для кухни</a></li>
+            <li class="list-group-item"><a href="#">Красота и здоровье</a></li>
+            <li class="list-group-item">
+              <a href="#">Климатическая техника</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="font-weight-bold u-footer-text">Контакты</h5>
+          <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item">Email: test@test.test</li>
+            <li class="list-group-item">Телефон: +7(800)777-77-77</li>
+            <li class="list-group-item">Полезная Информация 1</li>
+            <li class="list-group-item">Полезная Информация 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

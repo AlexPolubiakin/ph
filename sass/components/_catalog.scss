@@ -1,0 +1,23 @@
+.catalog-section-2r {
+  padding: 0;
+}
+
+.catalog-section-3r {
+  padding: 0;
+}
+
+.catalog-section__link {
+  margin-top: -5rem;
+  color: $color-primary;
+  &:hover {
+    color: $color-primary-light;
+    font-weight: 900;
+  }
+}
+
+.catalog-section {
+  transition: all 0.4s;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
